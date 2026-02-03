@@ -1,0 +1,79 @@
+/* ================================
+   Base
+================================ */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ================================
+   Layout
+================================ */
+.l-section {
+  width: 100%;
+}
+
+.l-section__inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ================================
+   Sections
+================================ */
+.hero {
+  background-color: #FFFFFF;
+}
+
+.video {
+  background-color: #F9FFFD;
+}
+
+.cta {
+  background-color: #1D8C86;
+}
+
+.intro {
+  background-color: #FFFFFF;
+}
+
+.market {
+  background-color: #FFFFFF;
+}
+
+.strengths {
+  background-color: rgba(29, 141, 136, 0.7);
+}
+
+.results {
+  background-color: #F0F4F5;
+}
+
+.comparison {
+  background-color: #FFFFFF;
+}
+
+.support {
+  background-color: #E9F7F7;
+}
+
+.advisor {
+  background-color: #FFFFFF;
+}
+
+.cta-bonus {
+  background-color: #25ACA5;
+}
+
+.faq {
+  background-color: #F0F4F5;
+}
+
+.message {
+  background-color: #CDE9F7;
+}
+
+.footer {
+  background-color: #FDFAF5;
+}
