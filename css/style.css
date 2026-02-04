@@ -31,7 +31,22 @@ img {
 }
 
 .cta {
-  background-color: #1D8C86;
+  background-color: #25ACA5;
+}
+
+.cta__wrap {
+  position: relative;
+}
+
+.cta__link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 45%;
+  width: 85%;
+  height: 30%;
+  /* 確認用（後で消す） */
+  background: rgba(255, 0, 0, 0.3);
 }
 
 .intro {
