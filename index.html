@@ -17,11 +17,29 @@
     </div>
   </section>
 
-  <section class="l-section video">
-    <div class="l-section__inner">
+<section class="l-section video">
+  <div class="l-section__inner">
+    <div class="video__wrap">
       <img src="images/video.png" alt="">
+      <div class="video__frame">
+        <!-- 調整完了後にiframeに差し替え -->
+        <iframe 
+          id="ytPlayer"
+          src="https://www.youtube.com/embed/動画ID?enablejsapi=1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<!-- 動画秒数ジャンプ用
+ボタン例
+<button onclick="jumpTo(30)">0:30から見る</button>
+<button onclick="jumpTo(120)">2:00から見る</button> -->
+
 
 <section class="l-section cta">
   <div class="l-section__inner">
@@ -144,5 +162,6 @@
   </div>
 </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
