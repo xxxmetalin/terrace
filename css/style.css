@@ -42,11 +42,11 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 45%;
-  width: 85%;
-  height: 30%;
+  top: 40%;
+  width: 78%;
+  height: 36%;
   /* 確認用（後で消す） */
-  background: rgba(255, 0, 0, 0.3);
+  /* background: rgba(255, 0, 0, 0.3); */
 }
 
 .intro {
