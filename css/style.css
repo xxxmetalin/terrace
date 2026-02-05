@@ -51,6 +51,9 @@ img {
   height: 100%;
 }
 
+/* ================================
+   CTA共通
+================================ */
 .cta {
   background-color: #25ACA5;
 }
@@ -59,28 +62,45 @@ img {
   position: relative;
 }
 
-.cta__link {
+.cta__btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* 確認用（後で消す） */
-  /* background: rgba(255, 0, 0, 0.3); */
+  transition: opacity 0.3s, transform 0.3s;
+  /* 確認用 */
+  /* background: rgba(255, 0, 0, 0.3);
+  outline: 2px solid red; */
 }
 
-/* CTA① cta01用 */
-.cta .cta__link {
-  top: 40%;
+.cta__btn img {
+  display: block;
+  width: 100%;
+}
+
+.cta__btn:hover {
+  opacity: 0.8;
+  transform: translateX(-50%) scale(1.02);
+}
+
+/* ================================
+   CTA① 
+================================ */
+.cta .cta__btn {
+  top: 39.5%;
+  width: 80%;
+}
+
+/* ================================
+   CTA②（特典付き）
+================================ */
+.cta-bonus {
+  background-color: #25ACA5;
+}
+
+.cta-bonus .cta__btn {
+  top: 89.5%;
   width: 78%;
-  height: 36%;
 }
-
-/* CTA②（特典付き） cta-bonus用 */
-.cta-bonus .cta__link {
-  top: 89%;   /* ここだけ調整 */
-  width: 78%;
-  height: 6.8%;
-}
-
 
 .intro {
   background-color: #FFFFFF;
