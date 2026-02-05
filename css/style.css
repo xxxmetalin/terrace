@@ -63,12 +63,24 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  /* 確認用（後で消す） */
+  background: rgba(255, 0, 0, 0.3);
+}
+
+/* CTA① cta01用 */
+.cta .cta__link {
   top: 40%;
   width: 78%;
   height: 36%;
-  /* 確認用（後で消す） */
-  /* background: rgba(255, 0, 0, 0.3); */
 }
+
+/* CTA②（特典付き） cta-bonus用 */
+.cta-bonus .cta__link {
+  top: 89%;   /* ここだけ調整 */
+  width: 78%;
+  height: 6.8%;
+}
+
 
 .intro {
   background-color: #FFFFFF;
@@ -170,4 +182,33 @@ img {
 
 .l-footer__copyright p {
   margin: 0;
+}
+
+/* ================================
+   CTA 固定
+================================ */
+.fixed-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.fixed-cta.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fixed-cta__inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.fixed-cta__inner img {
+  display: block;
+  width: 100%;
 }
